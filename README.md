@@ -1,6 +1,5 @@
 # airbnb-clone-project
-
-team Roles
+["Team Roles"]
 Business analyst (BA)
 
     Understands customer’s business processes
