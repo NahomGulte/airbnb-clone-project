@@ -146,3 +146,101 @@ python,postgresql
     Description: Junction table for properties in a wishlist.
 
     Attributes: wishlist_id (FK to Wishlists), property_id (FK to Properties)
+
+["Feature Breakdown"]
+   
+🔐 1. User Management
+
+    User registration & login (email/password or social auth)
+
+    Profile management (bio, profile picture, phone number)
+
+    Host vs. Guest role selection
+
+    Email verification & password reset
+
+    Account dashboard
+
+🏘️ 2. Property Management (Host)
+
+    Add new property (title, description, location, price, etc.)
+
+    Upload/manage property images
+
+    Set availability & pricing
+
+    View and manage listings
+
+    Edit or remove a listing
+
+📅 3. Booking System (Guest)
+
+    Search and filter properties (location, date, price, guests)
+
+    View property details
+
+    Select check-in/check-out dates and guest count
+
+    Calculate total price dynamically
+
+    Submit booking request
+
+    View booking history
+
+💳 4. Payment System
+
+    Secure checkout with preferred payment methods (e.g., card, wallet)
+
+    Payment processing and transaction records
+
+    Refund or cancellation handling
+
+    Payment receipts and confirmation emails
+
+⭐ 5. Reviews and Ratings
+
+    Leave a review after a stay
+
+    Ratings from 1 to 5 stars
+
+    Display reviews on property detail page
+
+    Host replies to reviews (optional)
+
+❤️ 6. Wishlist (Favorites)
+
+    Save properties to wishlist
+
+    Create and manage multiple wishlists
+
+    View wishlisted properties from dashboard
+
+🔍 7. Search and Filtering
+
+    Search by location, dates, and guest count
+
+    Filters: price range, amenities, property type, etc.
+
+    Sorting: price, rating, popularity
+
+📈 8. Admin Panel (optional)
+
+    User management (ban, promote, etc.)
+
+    Property approval/moderation
+
+    Report handling (fraud, abuse)
+
+    View platform analytics (users, bookings, revenue)
+
+🔔 9. Notifications & Messaging
+
+    Email/SMS notifications (booking confirmation, payment, cancellation)
+
+    In-app messaging system between host and guest (optional)
+
+🌐 10. Localization & Internationalization
+
+    Multi-language support
+
+    Currency conversion based on user location (optional)
