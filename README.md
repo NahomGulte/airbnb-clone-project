@@ -361,3 +361,34 @@ Why It's Crucial:
     Ensures secure and stable production environments.
 
     Limits the impact of misconfigurations.
+
+
+["CI/CD Pipeline"]
+
+What Are CI/CD Pipelines?
+
+CI/CD (Continuous Integration and Continuous Deployment/Delivery) pipelines are automated workflows that manage how code changes are built, tested, and deployed.
+
+    CI (Continuous Integration): Automatically tests and integrates new code into the main codebase whenever a developer pushes updates.
+
+    CD (Continuous Deployment/Delivery): Automatically deploys tested code to a staging or production environment.
+
+✅ Why CI/CD Is Important for This Project (Airbnb Clone)
+
+    Faster Development: Automates testing and deployment, reducing manual effort and errors.
+
+    Early Bug Detection: Catches issues quickly through automated tests on every code push.
+
+    Consistent Deployments: Ensures code is deployed the same way every time.
+
+    Improved Collaboration: Teams can push code with confidence, knowing changes won’t break the app.
+
+    High Availability: Frequent, small updates reduce downtime and improve user experience.
+
+🛠️ Tools You Can Use
+Purpose	Tools
+CI/CD Automation	GitHub Actions, GitLab CI, CircleCI, Travis CI
+Containerization	Docker
+Deployment	Docker Compose, Kubernetes, AWS/GCP/Azure, Vercel/Netlify (for frontend)
+Testing	Jest, Mocha, Cypress, Postman/Newman (API testing)
+Code Quality	ESLint, Prettier, SonarQube
