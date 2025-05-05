@@ -95,4 +95,54 @@ DevOps engineer
 Even in Agile environments, development and operations teams can be siloed. DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable. Working together with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis
 ["Technology Stack"]
 python,postgresql
+
+
 ["Database Design"]
+
+1. Users
+
+    Description: Represents people who use the platform—both hosts and guests.
+
+    Attributes: id, name, email, password_hash, phone_number, profile_picture, bio, is_host, created_at, updated_at
+
+2. Properties (Listings)
+
+    Description: Properties listed by hosts for rent.
+
+    Attributes: id, host_id (FK to Users), title, description, address, city, state, country, price_per_night, max_guests, bedrooms, bathrooms, amenities (array or relation), latitude, longitude, created_at, updated_at
+
+3. Bookings
+
+    Description: Reservations made by guests on properties.
+
+    Attributes: id, user_id (FK to Users), property_id (FK to Properties), check_in, check_out, total_price, guests_count, status (pending, confirmed, cancelled), created_at, updated_at
+
+4. Reviews
+
+    Description: Guest reviews of properties after a stay.
+
+    Attributes: id, booking_id (FK to Bookings), user_id (FK to Users), property_id (FK to Properties), rating (1–5), comment, created_at
+
+5. Payments
+
+    Description: Payment transactions for bookings.
+
+    Attributes: id, booking_id (FK to Bookings), user_id (FK to Users), amount, payment_method, payment_status (paid, failed, refunded), transaction_id, created_at
+
+6. Property Images
+
+    Description: Photos of properties.
+
+    Attributes: id, property_id (FK to Properties), image_url, is_cover, created_at
+
+7. Wishlists
+
+    Description: Lists of properties saved by users.
+
+    Attributes: id, user_id (FK to Users), name, created_at
+
+8. Wishlist_Items
+
+    Description: Junction table for properties in a wishlist.
+
+    Attributes: wishlist_id (FK to Wishlists), property_id (FK to Properties)
