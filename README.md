@@ -244,3 +244,120 @@ python,postgresql
     Multi-language support
 
     Currency conversion based on user location (optional)
+
+["API Security"]
+
+🔐 1. Authentication
+Security Measures:
+
+    Secure password hashing using algorithms like bcrypt or Argon2.
+
+    Multi-factor authentication (MFA) for extra protection.
+
+    OAuth support for third-party logins (Google, Facebook).
+
+    Email verification on sign-up.
+
+Why It's Crucial:
+
+    Prevents unauthorized access to accounts.
+
+    Reduces the risk of account takeovers.
+
+    Validates user identity before granting access to sensitive actions (like booking or payment).
+
+🛂 2. Authorization
+Security Measures:
+
+    Role-based access control (RBAC) to restrict actions based on user roles (e.g., host, guest, admin).
+
+    Scoped permissions for actions like editing listings or canceling bookings.
+
+Why It's Crucial:
+
+    Prevents privilege escalation (e.g., guests modifying other users’ properties).
+
+    Ensures users can only interact with resources they own or are authorized to use.
+
+💳 3. Payment Security
+Security Measures:
+
+    PCI-DSS compliant payment gateway integration (e.g., Stripe, PayPal).
+
+    Tokenization of payment information.
+
+    HTTPS-only communication for sensitive transactions.
+
+Why It's Crucial:
+
+    Protects credit card and financial information.
+
+    Prevents fraud and financial theft.
+
+    Maintains user trust in handling their money securely.
+
+🔐 4. Data Protection
+Security Measures:
+
+    Encrypted storage for sensitive user data (e.g., phone number, payment history).
+
+    Database access control and environment variable protection.
+
+    GDPR-compliant privacy policy and user data control features (data export/delete).
+
+Why It's Crucial:
+
+    Protects users’ personal and sensitive information.
+
+    Prevents identity theft and data leaks.
+
+    Ensures compliance with global data protection laws.
+
+🚫 5. Rate Limiting & Brute Force Protection
+Security Measures:
+
+    Rate limiting on login and API endpoints.
+
+    CAPTCHA to prevent bots.
+
+    IP blocking or throttling on suspicious behavior.
+
+Why It's Crucial:
+
+    Thwarts automated attacks and credential stuffing.
+
+    Preserves API resources and service uptime.
+
+    Enhances platform resilience against denial-of-service attempts.
+
+🕵️‍♂️ 6. Logging and Monitoring
+Security Measures:
+
+    Audit logs for user activity and critical operations.
+
+    Real-time monitoring and alerts for unusual behavior.
+
+Why It's Crucial:
+
+    Helps detect and respond to breaches quickly.
+
+    Tracks misuse or abuse of the platform.
+
+    Supports forensic investigations when needed.
+
+📦 7. Secure Deployment Practices
+Security Measures:
+
+    Environment separation (development, staging, production).
+
+    Container security (e.g., Docker, Kubernetes best practices).
+
+    Regular dependency updates and vulnerability scanning.
+
+Why It's Crucial:
+
+    Reduces risk from software vulnerabilities.
+
+    Ensures secure and stable production environments.
+
+    Limits the impact of misconfigurations.
